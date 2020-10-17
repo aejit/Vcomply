@@ -1,0 +1,260 @@
+<mat-toolbar class="toolbar">
+    <mat-icon mat-mini-fab color="primary" aria-hidden="false" aria-label="Example home icon" class='pointer'
+        (click)='OnClick()'>home</mat-icon>
+        <span style="margin-left: 15px;">GOVERNANCE DASHBOARD</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+    <mat-sidenav opened class="blackcolor" mode="side">Start content</mat-sidenav>
+</mat-sidenav-container>
+
+<mat-card class="margin-left" id="width-card">
+
+    <span style="margin-top: 1%;">Overview</span>
+    <section id="box2">
+        <mat-label>ALL ENTITIES</mat-label>
+        <mat-icon id="icon">keyboard_arrow_down</mat-icon>
+    </section>
+
+    <Section style="width: 100%; margin-top: 10%;">
+        <mat-card id="box1">
+            <mat-icon id="checkbox">check_box</mat-icon>
+            <mat-label style="font-size: x-small; margin-top: 0%; float: right;">Regulations</mat-label>
+            <span id="span1">0%</span> <span id="span2">0%</span> <span id="span3">100%</span>
+        </mat-card>
+
+        <mat-card id="box1">
+            <mat-icon id="checkbox">check_box</mat-icon>
+            <mat-label style="font-size: x-small; margin-top: 0%; float: right;">Standards..</mat-label>
+            <span id="span1">7%</span> <span id="span2">22%</span> <span id="span3">71%</span>
+        </mat-card>
+
+        <mat-card id="box12">
+            <mat-icon id="checkbox">check_box</mat-icon>
+            <mat-label style="font-size: x-small; margin-top: 0%; float: right;">Internal Control</mat-label>
+            <span id="span1">20%</span> <span id="span2">6%</span> <span id="span3">74%</span>
+        </mat-card>
+        <mat-card id="box123">
+            <mat-icon id="checkbox">check_box</mat-icon>
+            <mat-label style="font-size: x-small; margin-top: 0%; float: right;">Others...</mat-label>
+            <span id="span1">20%</span> <span id="span2">6%</span> <span id="span3">74%</span>
+        </mat-card>
+
+        <mat-card id="box1" style="padding: 0 !important; height: 40px;">
+            <section style="background-color: green;">
+                <mat-label style="font-size: small; margin-top: 0%; padding: 5% !important; margin-left: 2%;">COMPLETED
+                </mat-label>
+            </section>
+            <span
+                style="font-size: large; text-align: center; justify-content: center; color: green; margin-left: 30%; margin-top: 15%;">84%</span>
+        </mat-card>
+
+        <mat-card id="box1" style="padding: 0 !important; height: 40px;">
+            <section style="background-color: yellow;">
+                <mat-label style="font-size: small; margin-top: 0%; padding: 5% !important; margin-left: 13%;">DELAYED
+                </mat-label>
+            </section>
+            <span
+                style="font-size: large; text-align: center; justify-content: center; color: yellow; margin-left: 33%; margin-top: 15%;">12%</span>
+        </mat-card>
+
+        <mat-card style="padding: 0 !important; height: 40px; float: left;
+           margin: 0.30em; width: 25%;">
+            <section style="background-color: red;">
+                <mat-label style="font-size: small; margin-top: 0%; padding: 5% !important; margin-left: 7%;">NOT
+                    COMPLETED</mat-label>
+            </section>
+            <span
+                style="font-size: large; text-align: center; justify-content: center; color: red; margin-left: 42%; margin-top: 15%;">4%</span>
+        </mat-card>
+
+        <mat-card style="padding: 0 !important; height: 40px; float: left;
+        margin: 0.30em; width: 33%;">
+            <section style="background-color: blue;">
+                <mat-label style="font-size: small; margin-top: 0%; padding: 5% !important; margin-left: 15%;">DELIGENCE
+                    SCORE</mat-label>
+            </section>
+            <span
+                style="font-size: large; text-align: center; justify-content: center; color: blue; margin-left: 45%; margin-top: 15%;">8.9</span>
+        </mat-card>
+
+    </Section>
+    <mat-accordion>
+        <mat-expansion-panel style="margin-top: 11em;">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Company ploicy Regulations cateogry
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span id="span11">0%</span> <span id="span12">0%</span> <span id="span13">100%</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p></p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Data Security
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span id="span111">0%</span> <span id="span12">0%</span> <span id="span13">100%</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Weekely database backup</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Sub cateogry
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span id="span111">0%</span> <span id="span12">0%</span> <span id="span13">100%</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Weekely database backup</p>
+        </mat-expansion-panel>
+    </mat-accordion>
+</mat-card>
+
+
+<mat-card class="margin-left" id="width-card">
+
+    <span> Tuesday, </span>
+    <br>
+    <span>DECEMBER 05, 2019</span>
+    <span style="color:blue; width: 30%; margin-left: 18%; font-size: medium; cursor: pointer;"> SYNC TO YOUR DEVICE CALNEDER </span>
+    <mat-icon style="float: right; cursor: pointer;">crop_free</mat-icon>
+
+
+    <hr style="margin-top: 2em;">
+    <mat-accordion>
+        <mat-expansion-panel style="margin-top: 1em;" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Ammended US corporation........
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span style="font-size: small; margin-top: 2px; float: right; margin-left: 160px;">09:30 AM</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p><button
+                    style="color: green; margin: 3%; background-color: white;  border: none; cursor: pointer;">DONE</button>
+                <button style="color: yellow; background-color: white;  border: none; cursor: pointer;">NEED MORE
+                    TIME</button>
+                <button style="color: red; margin: 3%; background-color: white;  border: none; cursor: pointer;">CANNOT
+                    COMPLY</button> </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Acquisation Strayegies tools .....
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span style="font-size: small; margin-top: 2px; float: right; margin-left: 160px;">09:45 AM</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>
+                <button
+                    style="color: green; margin: 3%; background-color: white;  border: none; cursor: pointer;">DONE</button>
+                <button style="color: yellow; background-color: white;  border: none; cursor: pointer;">NEED MORE
+                    TIME</button>
+                <button style="color: red; margin: 3%; background-color: white;  border: none; cursor: pointer;">CANNOT
+                    COMPLY</button>
+            </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    SAAS vendor report .....................
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span style="font-size: small; margin-top: 2px; float: right; margin-left: 160px;">09:15 AM</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p><button
+                    style="color: green; margin: 3%; background-color: white;  border: none; cursor: pointer;">DONE</button>
+                <button style="color: yellow; background-color: white;  border: none; cursor: pointer;">NEED MORE
+                    TIME</button>
+                <button style="color: red; margin: 3%; background-color: white;  border: none; cursor: pointer;">CANNOT
+                    COMPLY</button> </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    FUMCTIONAL review report ........
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span style="font-size: small; margin-top: 2px; float: right; margin-left: 160px;">09:15 AM</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p><button
+                    style="color: green; margin: 3%; background-color: white;  border: none; cursor: pointer;">DONE</button>
+                <button style="color: yellow; background-color: white;  border: none; cursor: pointer;">NEED MORE
+                    TIME</button>
+                <button style="color: red; margin: 3%; background-color: white;  border: none; cursor: pointer;">CANNOT
+                    COMPLY</button> </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    SIDES vendor report .....................
+                </mat-panel-title>
+                <mat-panel-description style="float: right;">
+                    <span style="font-size: small; margin-top: 2px; float: right; margin-left: 160px;">09:15 AM</span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p><button
+                    style="color: green; margin: 3%; background-color: white;  border: none; cursor: pointer;">DONE</button>
+                <button style="color: yellow; background-color: white;  border: none; cursor: pointer;">NEED MORE
+                    TIME</button>
+                <button style="color: red; margin: 3%; background-color: white;  border: none; cursor: pointer;">CANNOT
+                    COMPLY</button> </p>
+        </mat-expansion-panel>
+    </mat-accordion>
+</mat-card>
+
+<mat-card class="margin-right" id="width-card">
+
+    <span style="margin-top: 1%;">Trend Analysis</span>
+    <section id="box2">
+        <mat-label>ALL Categories</mat-label>
+        <mat-icon id="icon">keyboard_arrow_down</mat-icon>
+    </section>
+    <section style="margin-top: 2em;">
+        <google-chart #chart [title]="title" [type]="type" [data]="data" [columns]="columnNames" [options]="options"
+            [width]="width" [height]="height">
+        </google-chart>
+    </section>
+</mat-card>
+
+<mat-card class="margin-left" id="width-card">
+    <span style="margin-top: 1%;">Workroom Updates</span>
+
+    <section style="background-color: linen; padding: 1em; margin-top: 1em;"><span style="color: mediumblue;"> Mike
+            Williams</span> mentioned you in a
+        comment <span style="float: right;">10-DEC-2019</span>
+        
+        <p>Right on track with the ongoing marketing campaign. <br>Should be able to send report by tonight.
+            <mat-icon style="float: right; color: red; cursor: pointer;">close</mat-icon>
+            <mat-icon style="float: right; color: blue; cursor: pointer;">launch</mat-icon>
+        </p>
+        
+    </section>
+
+    <section style="background-color: linen; padding: 1em; margin-top: 1em;"><span style="color: mediumblue;"> Mike
+            Williams</span> mentioned you in a
+        comment <span style="float: right;">9-DEC-2019</span> <p>Tomorrow I will share some details.
+            <mat-icon style="float: right; color: red; cursor: pointer;">close</mat-icon>
+            <mat-icon style="float: right; color: blue; cursor: pointer;">launch</mat-icon>
+        </p>
+
+    </section>
+
+    <section style="background-color: linen; padding: 1em; margin-top: 1em;"><span style="color: mediumblue;"> Mike
+            Williams</span> mentioned you in a
+            comment <span style="float: right;">19-DEC-2019</span> <p>Right on track with the ongoing marketing campaign.<br>>Should be able to send report by tonight.
+                <mat-icon style="float: right; color: red; cursor: pointer;">close</mat-icon>
+                <mat-icon style="float: right; color: blue; cursor: pointer;">launch</mat-icon></p>
+    </section>
+
+</mat-card>

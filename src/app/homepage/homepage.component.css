@@ -1,0 +1,167 @@
+.pointer {cursor: pointer;}
+.toolbar{background-color: black;
+color: white;}
+
+
+.example-container {
+    position: absolute;
+    height: 60em;
+    min-height: 100%;
+    display: block;
+    transform: inherit;
+    background-color: black;
+    overflow-wrap: inherit;
+  }
+  .blackcolor{
+      background-color: black;
+  }
+
+  .margin-left{
+      margin-left: 4em;
+  }
+  .margin-right{
+    margin-left: 4em;
+}
+
+  #width-card{
+      width: 40vw;
+      margin-top: 0.5em;
+      float: left;
+      overflow: hidden;
+      height: 65vh;
+  }
+
+  ::ng-deep .mat-form-field {
+      height: 2px;
+}
+
+#box1{
+    width:17%;
+    height: 1.5em;
+    float: left;
+    margin: 0.30em;
+}
+#box12{
+    width:19%;
+    height: 1.5em;
+    float: left;
+    margin: 0.30em;
+}
+#box123{
+    width:16%;
+    height: 1.5em;
+    float: left;
+    margin: 0.30em;
+}
+#box2{
+    box-sizing: border-box;
+    float: right;
+    width: 40%;
+    /* height: 5px; */
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#icon{
+    float: right;
+}
+
+#span1{
+    color: red;
+    font-size: small;
+    float: right;
+    margin-top: -10px;
+    margin-left: 1px;
+}
+#span2{
+    color: yellow;
+    font-size: small;
+    float: right;
+    margin-top: -10px;
+    margin-left: 1px;
+}
+#span3{
+    color: green;
+    font-size: small;
+    float: right;
+    margin-top: -10px;
+    margin-left: 1px;
+}
+
+#span11{
+    color: red;
+    font-size: small;
+    float: right;
+    margin-top: 2px;
+    margin-left: 100px;
+}
+#span111{
+    color: red;
+    font-size: small;
+    float: right;
+    margin-top: 2px;
+    margin-left: 260px;
+}
+
+#span12{
+    color: yellow;
+    font-size: small;
+    float: right;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: -1px;
+
+}
+#span13{
+    color: green;
+    font-size: small;
+    float: right;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: -1px;
+
+}
+#checkbox{
+    margin: 0.05em 0.05em;
+}
+
+  @media (max-width: 985px){
+    #width-card{
+        width: 40%;
+        margin-top: 1em;
+        float: left;
+        height: 10em;
+        overflow: hidden;
+    }
+}
+@media (max-width: 960px){
+    #width-card{
+        width: 40%;
+        margin-top: 1em;
+        float: left;
+        height: 10em;
+        overflow: hidden;
+    }
+    #box1{
+        width:13%;
+        height: 2em;
+        float: left;
+        margin: 0.5em;
+    }
+    #box2{
+        box-sizing: border-box;
+        float: right;
+        width: 15%;
+        padding: 0.5em;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #icon{
+        float: none;
+    }
+}
